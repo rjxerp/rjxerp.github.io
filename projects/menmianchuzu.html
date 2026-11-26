@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>租赁合同管理系统 | AI先知局 · 个人作品集</title>
+<meta name="description" content="由桌面版（PyQt5 + SQLite V2.2.6）完整迁移的浏览器 Web 应用，面向商业门面租赁的合同与租金全流程管理。">
+<meta name="keywords" content="租赁合同管理系统,AI先知局,作品详情,开源项目">
+<link rel="canonical" href="https://rjxerp.github.io/projects/menmianchuzu.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="租赁合同管理系统 | AI先知局">
+<meta property="og:description" content="由桌面版（PyQt5 + SQLite V2.2.6）完整迁移的浏览器 Web 应用，面向商业门面租赁的合同与租金全流程管理。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230062b9'/%3E%3Ctext x='16' y='22' font-family='sans-serif' font-size='16' font-weight='bold' fill='white' text-anchor='middle'%3EA%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="../assets/css/design-system.css">
+<script src="https://cdn.jsdelivr.net/npm/@tencent-ai/workbuddy-cloud-sdk@dev/lib/index.global.js" defer></script>
+</head>
+<body data-page="works" data-project-slug="menmianchuzu">
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="brand" href="../index.html">
+      <span class="brand__mark" aria-hidden="true">A</span>
+      <span>AI先知局 <span class="brand__sub">个人作品集</span></span>
+    </a>
+    <nav class="nav" aria-label="主导航">
+      <a class="nav__link" data-nav="home" href="../index.html">首页</a>
+      <a class="nav__link" data-nav="works" href="../works.html">作品</a>
+      <a class="nav__link" data-nav="about" href="../about.html">关于我</a>
+      <a class="nav__link" data-nav="contact" href="../contact.html">联系</a>
+    </nav>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-label="展开导航菜单" aria-controls="mobile-nav">
+      <span class="nav-toggle__bars" aria-hidden="true"></span>
+    </button>
+  </div>
+  <div class="mobile-nav" id="mobile-nav">
+    <div class="container">
+      <a class="mobile-nav__link" href="../index.html">首页</a>
+      <a class="mobile-nav__link" href="../works.html">作品列表</a>
+      <a class="mobile-nav__link" href="../about.html">关于我</a>
+      <a class="mobile-nav__link" href="../contact.html">联系方式</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="detail-hero">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="../index.html">首页</a> / <a href="../works.html">作品</a> / 租赁合同管理系统
+      </div>
+      <h1 class="detail-hero__title">租赁合同管理系统</h1>
+      <p class="detail-hero__lead">由桌面版（PyQt5 + SQLite V2.2.6）完整迁移的浏览器 Web 应用，面向商业门面租赁的合同与租金全流程管理。</p>
+      <div class="detail-hero__cta">
+        <a class="btn btn--primary" href="https://github.com/rjxerp/menmianchuzu" target="_blank" rel="noopener noreferrer">
+          <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.37.5 0 5.87 0 12.5c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58 0-.29-.01-1.05-.02-2.06-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.33-1.76-1.33-1.76-1.09-.74.08-.73.08-.73 1.2.09 1.83 1.24 1.83 1.24 1.07 1.83 2.81 1.3 3.5 1 .11-.78.42-1.31.76-1.61-2.66-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6.01 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.62-5.49 5.92.43.37.81 1.1.81 2.22 0 1.6-.01 2.89-.01 3.28 0 .32.22.7.83.58C20.57 22.3 24 17.8 24 12.5 24 5.87 18.63.5 12 .5Z"/></svg>
+          查看源码仓库
+        </a>
+        <a class="btn btn--ghost" href="../works.html">返回作品列表</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container detail-layout">
+      <div>
+        <div class="detail-block">
+          <h2 class="detail-block__title">项目概览</h2>
+                    <p style="color:var(--sub);">系统服务于门面房屋出租合同管理的商业房产与门面租赁业务，覆盖合同台账、租金账务、到期提醒等日常流程。原桌面版基于 PyQt5 与 SQLite 开发，随业务量增长与使用人数增加，单机界面在协作与远程访问上的局限日益明显，因此在 V2.3.2-web 版本中整体迁移为 FastAPI 驱动的 Web 架构。</p>
+          <p style="color:var(--sub);">迁移并非简单移植：数据模型保持向后兼容，同时将业务逻辑从界面层彻底分离，使同一套逻辑既能通过浏览器使用，也便于后续对接自动提醒与数据导出功能。版本号采用单一来源（backend/version.py）管理，避免多处维护产生版本漂移。</p>
+        </div>
+
+        <div class="detail-block">
+          <h2 class="detail-block__title">界面与流程预览</h2>
+          <figure class="detail-figure">
+            <div class="detail-figure__inner">
+              <img class="cover-img" src="../assets/img/projects/menmianchuzu.jpg" alt="租赁合同管理系统 界面截图" loading="lazy" decoding="async" onerror="this.style.display='none'">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21V8l7-5 7 5v13"/><path d="M9 21v-6h6v6"/><path d="M7 11h2M13 11h2M7 15h2"/></svg>
+            </div>
+            <figcaption class="detail-figure__caption"> · 门面租赁管理系统 — 实际界面以源码仓库内的说明与截图为准</figcaption>
+          </figure>
+        </div>
+
+        <div class="detail-block">
+          <h2 class="detail-block__title">核心功能</h2>
+          <ul class="stack__list" id="detail-features" style="font-size:15px;">
+                        <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5 9-9"/></svg>
+              <span>启动脚本自动探测可用 Python 环境，自动跳过专用虚拟环境</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5 9-9"/></svg>
+              <span>启动前自动检测 Web 依赖，缺失时自动安装 requirements.txt</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5 9-9"/></svg>
+              <span>版本号单一来源管理，界面与接口展示一致</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5 9-9"/></svg>
+              <span>支持表格导出与 PDF 报表生成</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="detail-block">
+          <h2 class="detail-block__title">使用与实现说明</h2>
+          <p style="color:var(--sub);">
+            本项目的完整源码、依赖声明、配置说明与操作文档均已提交至公开仓库，
+            可直接克隆运行或参考其实现思路。仓库内同时保留了开发过程中的
+            版本记录与说明文档，便于对照了解演进思路。
+          </p>
+          <a class="btn btn--primary" href="https://github.com/rjxerp/menmianchuzu" target="_blank" rel="noopener noreferrer">
+            打开 GitHub 仓库
+            <svg class="btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <aside>
+        <div class="stack" style="margin-bottom: var(--s3);">
+          <div class="stack__title">项目信息</div>
+          <dl class="fact-list">
+                        <div class="fact-list__row">
+              <dt>当前版本</dt>
+              <dd>v2.3.2-web（版本单一源 backend/version.py）</dd>
+            </div>
+            <div class="fact-list__row">
+              <dt>技术栈</dt>
+              <dd>Python 3.10+ · FastAPI · uvicorn · openpyxl · reportlab · PyJWT</dd>
+            </div>
+            <div class="fact-list__row">
+              <dt>运行环境</dt>
+              <dd>Windows 10 / 11，本地启动后浏览器访问</dd>
+            </div>
+            <div class="fact-list__row">
+              <dt>访问方式</dt>
+              <dd>双击启动脚本后访问 http://127.0.0.1:8000</dd>
+            </div>
+            <div class="fact-list__row">
+              <dt>适用单位</dt>
+              <dd>门面房屋出租合同管理（商业房产 / 门面租赁）</dd>
+            </div>
+          </dl>
+        </div>
+        <div class="stack" style="margin-bottom: var(--s3);">
+          <div class="stack__title">技术栈</div>
+          <div style="display:flex; flex-wrap:wrap; gap:6px;">
+                        <span class="tag">Python</span>
+            <span class="tag">FastAPI</span>
+            <span class="tag">uvicorn</span>
+            <span class="tag">SQLite</span>
+            <span class="tag">openpyxl</span>
+            <span class="tag">reportlab</span>
+          </div>
+        </div>
+        <div class="stack">
+          <div class="stack__title">相关分类</div>
+          <div style="display:flex; flex-wrap:wrap; gap:6px;">
+            <span class="tag">应用软件</span>
+            <span class="tag tag--plain">开源可复用</span>
+            <span class="tag tag--plain">含配套文档</span>
+          </div>
+          <a class="btn btn--ghost btn--sm" href="../contact.html" style="margin-top: var(--s2); width:100%;">有类似需求？联系我</a>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0;">
+    <div class="container">
+      <div class="pager">
+                <div class="pager__item">
+          <div class="pager__label">← 返回</div>
+          <div class="pager__title"><a href="../works.html">全部作品列表</a></div>
+        </div>
+                <div class="pager__item pager__item--next">
+          <div class="pager__label">下一篇 →</div>
+          <div class="pager__title"><a href="files-to-md.html">文档格式转换工具</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__grid">
+      <div>
+        <div class="brand" style="color:#fff; margin-bottom: var(--s2);">
+          <span class="brand__mark" aria-hidden="true">A</span>
+          <span>AI先知局</span>
+        </div>
+        <p class="site-footer__text">独立开发者，专注业务软件、AI 工作流与内容工具。用代码解决真实场景里的具体问题。</p>
+        <div class="site-social">
+          <a href="https://github.com/rjxerp" target="_blank" rel="noopener noreferrer" aria-label="GitHub 主页">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.37.5 0 5.87 0 12.5c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58 0-.29-.01-1.05-.02-2.06-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.33-1.76-1.33-1.76-1.09-.74.08-.73.08-.73 1.2.09 1.83 1.24 1.83 1.24 1.07 1.83 2.81 1.3 3.5 1 .11-.78.42-1.31.76-1.61-2.66-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6.01 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.62-5.49 5.92.43.37.81 1.1.81 2.22 0 1.6-.01 2.89-.01 3.28 0 .32.22.7.83.58C20.57 22.3 24 17.8 24 12.5 24 5.87 18.63.5 12 .5Z"/></svg>
+          </a>
+          <a href="mailto:1988271@qq.com" aria-label="发送邮件">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg>
+          </a>
+        </div>
+      </div>
+      <div>
+        <div class="site-footer__title">导航</div>
+        <ul class="site-footer__list">
+          <li><a href="../index.html">首页</a></li>
+          <li><a href="../works.html">作品列表</a></li>
+          <li><a href="../about.html">关于我</a></li>
+          <li><a href="../contact.html">联系方式</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="site-footer__title">联系</div>
+        <ul class="site-footer__contact">
+          <li><strong>微信</strong> rjx1988271</li>
+          <li><strong>邮箱</strong> 1988271@qq.com</li>
+          <li><strong>GitHub</strong> rjxerp</li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <span>© <span data-year>2026</span> AI先知局 · 个人作品集</span>
+      <span>模板基于 <a href="https://github.com/rammcodes/Dopefolio" target="_blank" rel="noopener noreferrer">Dopefolio</a>（GPL-3.0）改造</span>
+    </div>
+  </div>
+</footer>
+
+<script src="../assets/js/site.js" defer></script>
+<script src="../assets/js/cloud.js" defer></script>
+<script src="../assets/js/cloud-data.js" defer></script>
+<script src="../assets/js/cloud-cover.js" defer></script>
+<script defer>
+/* 项目详情页：从云端按 slug 同步项目数据
+   云端可达时以云端为准（内容可后台更新）；不可达时保留静态内容。
+   放在 DOMContentLoaded 中执行，确保 defer 外部脚本已就绪。 */
+document.addEventListener("DOMContentLoaded", function () {
+  "use strict";
+  var SLUG = "menmianchuzu";
+  var root = document.querySelector("[data-project-slug]");
+  if (!root || !isCloudReady()) return;
+
+  fetchProjectBySlug(SLUG.slug).then(function (p) {
+    if (!p) return;
+
+    // 标题与副标题
+    var titleEl = document.querySelector(".detail-hero__title");
+    if (titleEl && p.title) titleEl.textContent = p.title;
+    var leadEl = document.querySelector(".detail-hero__lead");
+    if (leadEl && p.summary) leadEl.textContent = p.summary;
+
+    // 侧栏事实表
+    var factBody = document.querySelector(".fact-list");
+    if (factBody && p.facts && p.facts.length) {
+      factBody.innerHTML = p.facts.map(function (f) {
+        return '<div class="fact-list__row"><dt>' + escapeHtml(f[0]) +
+          "</dt><dd>" + escapeHtml(f[1]) + "</dd></div>";
+      }).join("");
+    }
+
+    // 技术栈标签
+    var stackBox = document.querySelector(".stack__list") &&
+      document.querySelectorAll(".stack")[1];
+    if (stackBox && p.techStack && p.techStack.length) {
+      var tags = stackBox.querySelector("div:last-child") || stackBox;
+      tags.innerHTML = p.techStack.map(function (t) {
+        return '<span class="tag">' + escapeHtml(t) + "</span>";
+      }).join("");
+    }
+  }).catch(function () {
+    // 云端不可达：保留静态内容，不打断阅读
+  });
+});
+</script>
+</body>
+</html>

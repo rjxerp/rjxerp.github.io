@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="no-js"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI先知局 · 个人作品集 | 应用软件、代码项目与设计作品</title>
+<meta name="description" content="AI先知局个人作品集：展示独立开发的应用软件、开源代码项目与设计作品。项目均附代码仓库与演示说明，可直接联系沟通。">
+<meta name="keywords" content="AI先知局,个人作品集,Python,应用开发,开源项目,设计作品,AI工具">
+<meta name="author" content="AI先知局">
+<link rel="canonical" href="https://rjxerp.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="AI先知局 · 个人作品集">
+<meta property="og:description" content="应用软件、代码项目与设计作品 — 独立开发者的作品展示与联系方式。">
+<meta property="og:url" content="https://rjxerp.github.io/">
+<meta name="theme-color" content="#0062b9">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230062b9'/%3E%3Ctext x='16' y='22' font-family='sans-serif' font-size='16' font-weight='bold' fill='white' text-anchor='middle'%3EA%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/css/design-system.css">
+<script src="https://cdn.jsdelivr.net/npm/@tencent-ai/workbuddy-cloud-sdk@dev/lib/index.global.js" defer></script>
+</head>
+<body data-page="home">
+
+<!-- ===== 页头 ===== -->
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="brand" href="index.html">
+      <span class="brand__mark" aria-hidden="true">A</span>
+      <span>AI先知局 <span class="brand__sub">个人作品集</span></span>
+    </a>
+    <nav class="nav" aria-label="主导航">
+      <a class="nav__link" data-nav="home" href="index.html">首页</a>
+      <a class="nav__link" data-nav="works" href="works.html">作品</a>
+      <a class="nav__link" data-nav="about" href="about.html">关于我</a>
+      <a class="nav__link" data-nav="contact" href="contact.html">联系</a>
+    </nav>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-label="展开导航菜单" aria-controls="mobile-nav">
+      <span class="nav-toggle__bars" aria-hidden="true"></span>
+    </button>
+  </div>
+  <div class="mobile-nav" id="mobile-nav">
+    <div class="container">
+      <a class="mobile-nav__link" href="index.html">首页</a>
+      <a class="mobile-nav__link" href="works.html">作品列表</a>
+      <a class="mobile-nav__link" href="about.html">关于我</a>
+      <a class="mobile-nav__link" href="contact.html">联系方式</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ===== Hero ===== -->
+  <section class="hero">
+    <div class="container hero__grid">
+      <div>
+        <span class="eyebrow">独立开发者 · 个人品牌</span>
+        <h1 class="hero__title">
+          把实务经验<br>做成<span class="hero__title-accent">能跑起来的软件</span>
+        </h1>
+        <p class="hero__lead">
+          我是 AI先知局。围绕房产租赁、财务账单、文档处理等真实业务场景做应用软件，
+          同时开发 AI 协作技能与内容生产工具。所有作品源自实际工作需求，均可查源码。
+        </p>
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="works.html">
+            浏览作品
+            <svg class="btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+          </a>
+          <a class="btn btn--ghost" href="contact.html">联系合作</a>
+        </div>
+        <div class="hero__stats">
+          <div class="hero__stat">
+            <div class="hero__stat-num">13</div>
+            <div class="hero__stat-label">公开代码仓库</div>
+          </div>
+          <div class="hero__stat">
+            <div class="hero__stat-num">6</div>
+            <div class="hero__stat-label">已上线应用项目</div>
+          </div>
+          <div class="hero__stat">
+            <div class="hero__stat-num">3</div>
+            <div class="hero__stat-label">AI 协作技能包</div>
+          </div>
+        </div>
+      </div>
+      <div class="hero__visual">
+        <div class="hero__card" aria-hidden="true">
+          <div class="hero__card-bar">
+            <span class="hero__card-dot"></span>
+            <span class="hero__card-dot"></span>
+            <span class="hero__card-dot"></span>
+          </div>
+          <div class="hero__card-line hero__card-line--accent hero__card-line--short"></div>
+          <div class="hero__card-line hero__card-line--mid"></div>
+          <div class="hero__card-line"></div>
+          <div class="hero__card-line hero__card-line--mid"></div>
+          <div class="hero__card-line hero__card-line--short"></div>
+          <div class="hero__card-line"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 精选作品 ===== -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="section__head section__head--center">
+        <span class="eyebrow">精选作品</span>
+        <h2 class="section__title">从业务问题到可用产品</h2>
+        <p class="section__desc">每个项目都源自真实工作场景，附代码仓库与操作说明。</p>
+      </div>
+
+      <div class="grid" id="featured-grid">
+        <!-- 项目 1 -->
+        <article class="work-card reveal">
+          <div class="work-card__figure">
+            <span class="work-card__badge">应用软件</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21V8l7-5 7 5v13"></path><path d="M9 21v-6h6v6"></path><path d="M7 11h2M13 11h2M7 15h2"></path></svg>
+          </div>
+          <div class="work-card__body">
+            <h3 class="work-card__title">租赁合同管理系统</h3>
+            <p class="work-card__desc">门面租赁全流程管理，Web 端本地运行，支持合同台账、租金账务与到期提醒。</p>
+            <div class="work-card__meta">
+              <span class="tag">Python</span>
+              <span class="tag">FastAPI</span>
+              <span class="tag tag--plain">桌面 → Web</span>
+            </div>
+            <div class="work-card__links">
+              <a class="work-card__link" href="projects/menmianchuzu.html">
+                查看详情
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+              </a>
+              <a class="work-card__link work-card__link--muted" href="https://github.com/rjxerp/menmianchuzu" target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.37.5 0 5.87 0 12.5c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58 0-.29-.01-1.05-.02-2.06-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.33-1.76-1.33-1.76-1.09-.74.08-.73.08-.73 1.2.09 1.83 1.24 1.83 1.24 1.07 1.83 2.81 1.3 3.5 1 .11-.78.42-1.31.76-1.61-2.66-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6.01 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.62-5.49 5.92.43.37.81 1.1.81 2.22 0 1.6-.01 2.89-.01 3.28 0 .32.22.7.83.58C20.57 22.3 24 17.8 24 12.5 24 5.87 18.63.5 12 .5Z"></path></svg>
+                源码
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 项目 2 -->
+        <article class="work-card reveal">
+          <div class="work-card__figure">
+            <span class="work-card__badge">应用软件</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 2h9l5 5v15H6z"></path><path d="M15 2v5h5"></path><path d="M9 13h6M9 17h4"></path></svg>
+          </div>
+          <div class="work-card__body">
+            <h3 class="work-card__title">文档格式转换工具</h3>
+            <p class="work-card__desc">Windows 桌面应用，批量把 doc / docx / pdf / Excel / txt 转标准 Markdown，保留标题列表表格结构。</p>
+            <div class="work-card__meta">
+              <span class="tag">Python</span>
+              <span class="tag">Tkinter</span>
+              <span class="tag tag--plain">批量处理</span>
+            </div>
+            <div class="work-card__links">
+              <a class="work-card__link" href="projects/files-to-md.html">
+                查看详情
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+              </a>
+              <a class="work-card__link work-card__link--muted" href="https://github.com/rjxerp/files_To_MD" target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.37.5 0 5.87 0 12.5c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58 0-.29-.01-1.05-.02-2.06-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.33-1.76-1.33-1.76-1.09-.74.08-.73.08-.73 1.2.09 1.83 1.24 1.83 1.24 1.07 1.83 2.81 1.3 3.5 1 .11-.78.42-1.31.76-1.61-2.66-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6.01 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.62-5.49 5.92.43.37.81 1.1.81 2.22 0 1.6-.01 2.89-.01 3.28 0 .32.22.7.83.58C20.57 22.3 24 17.8 24 12.5 24 5.87 18.63.5 12 .5Z"></path></svg>
+                源码
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 项目 3 -->
+        <article class="work-card reveal">
+          <div class="work-card__figure">
+            <span class="work-card__badge">AI 技能包</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.6.9-4.8 4.6 1.2 6.5L12 17.3 6.1 20.4l1.2-6.5-4.8-4.6 6.6-.9z"></path></svg>
+          </div>
+          <div class="work-card__body">
+            <h3 class="work-card__title">七虾技能包 v3.2.6</h3>
+            <p class="work-card__desc">选题、文案、标题、图片、审核五环节串行协作系统，面向零基础新手做到一键出稿。</p>
+            <div class="work-card__meta">
+              <span class="tag">Claude Code</span>
+              <span class="tag">Skill</span>
+              <span class="tag tag--plain">新手向</span>
+            </div>
+            <div class="work-card__links">
+              <a class="work-card__link" href="projects/qi-xia.html">
+                查看详情
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+              </a>
+              <a class="work-card__link work-card__link--muted" href="https://github.com/rjxerp/qi-xia" target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.37.5 0 5.87 0 12.5c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58 0-.29-.01-1.05-.02-2.06-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.33-1.76-1.33-1.76-1.09-.74.08-.73.08-.73 1.2.09 1.83 1.24 1.83 1.24 1.07 1.83 2.81 1.3 3.5 1 .11-.78.42-1.31.76-1.61-2.66-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6.01 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.62-5.49 5.92.43.37.81 1.1.81 2.22 0 1.6-.01 2.89-.01 3.28 0 .32.22.7.83.58C20.57 22.3 24 17.8 24 12.5 24 5.87 18.63.5 12 .5Z"></path></svg>
+                源码
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div style="text-align:center;margin-top:var(--s5)">
+        <a class="btn btn--ghost" href="works.html">查看全部 8 个作品</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 能力 ===== -->
+        <div class="ai-summary" id="ai-summary" hidden>
+        <span class="ai-summary__label" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.5l2.9 5.9 6.6.9-4.8 4.6 1.2 6.5L12 17.3 6.1 20.4l1.2-6.5-4.8-4.6 6.6-.9z"/></svg>
+        </span>
+        <div>
+          <div class="ai-summary__title">AI 读我的作品后，这样概括</div>
+          <p class="ai-summary__text" id="ai-summary-text"></p>
+        </div>
+      </div>
+
+<section class="section">
+    <div class="container">
+      <div class="section__head section__head--center">
+        <span class="eyebrow">我能做什么</span>
+        <h2 class="section__title">从需求到交付的完整闭环</h2>
+        <p class="section__desc">不只是写代码，还包括需求拆解、文档编写、部署落地与新手引导。</p>
+      </div>
+      <div class="grid">
+        <div class="feature reveal">
+          <div class="feature__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 6 2 12l6 6"></path><path d="m16 6 6 6-6 6"></path></svg>
+          </div>
+          <h3 class="feature__title">业务软件定制</h3>
+          <p class="feature__desc">面向租赁、财务、抄表等具体场景，把重复台账与提醒流程做成能一键运行的桌面或 Web 应用。</p>
+        </div>
+        <div class="feature reveal">
+          <div class="feature__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2v20M2 12h20"></path><circle cx="12" cy="12" r="9"></circle></svg>
+          </div>
+          <h3 class="feature__title">AI 工作流搭建</h3>
+          <p class="feature__desc">把多环节 AI 协作编排成技能包，从选题到审校形成闭环，并配套零基础上手文档。</p>
+        </div>
+        <div class="feature reveal">
+          <div class="feature__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16v12H4z"></path><path d="M8 20h8M12 16v4"></path></svg>
+          </div>
+          <h3 class="feature__title">文档与内容生产</h3>
+          <p class="feature__desc">合同审查、发票归档、格式转换等文档链路工具，输出可直接交付的结构化文档。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section class="section" style="padding-top:0">
+    <div class="container">
+      <div class="cta-band reveal">
+        <h2 class="cta-band__title">有具体需求？直接聊聊</h2>
+        <p class="cta-band__desc">无论是业务软件定制、AI 流程搭建，还是内容创作上的想法，都欢迎联系。</p>
+        <div class="cta-band__actions">
+          <a class="btn btn--ghost" href="contact.html">获取联系方式</a>
+          <a class="btn btn--primary" href="https://github.com/rjxerp" target="_blank" rel="noopener noreferrer">
+            <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.37.5 0 5.87 0 12.5c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58 0-.29-.01-1.05-.02-2.06-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.33-1.76-1.33-1.76-1.09-.74.08-.73.08-.73 1.2.09 1.83 1.24 1.83 1.24 1.07 1.83 2.81 1.3 3.5 1 .11-.78.42-1.31.76-1.61-2.66-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6.01 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.62-5.49 5.92.43.37.81 1.1.81 2.22 0 1.6-.01 2.89-.01 3.28 0 .32.22.7.83.58C20.57 22.3 24 17.8 24 12.5 24 5.87 18.63.5 12 .5Z"></path></svg>
+            浏览 GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===== 页脚 ===== -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__grid">
+      <div>
+        <div class="brand" style="color:#fff;margin-bottom:var(--s2)">
+          <span class="brand__mark" aria-hidden="true">A</span>
+          <span>AI先知局</span>
+        </div>
+        <p class="site-footer__text">独立开发者，专注业务软件、AI 工作流与内容工具。用代码解决真实场景里的具体问题。</p>
+        <div class="site-social">
+          <a href="https://github.com/rjxerp" target="_blank" rel="noopener noreferrer" aria-label="GitHub 主页">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.37.5 0 5.87 0 12.5c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58 0-.29-.01-1.05-.02-2.06-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.33-1.76-1.33-1.76-1.09-.74.08-.73.08-.73 1.2.09 1.83 1.24 1.83 1.24 1.07 1.83 2.81 1.3 3.5 1 .11-.78.42-1.31.76-1.61-2.66-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6.01 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.62-5.49 5.92.43.37.81 1.1.81 2.22 0 1.6-.01 2.89-.01 3.28 0 .32.22.7.83.58C20.57 22.3 24 17.8 24 12.5 24 5.87 18.63.5 12 .5Z"></path></svg>
+          </a>
+          <a href="mailto:1988271@qq.com" aria-label="发送邮件">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m2 7 10 6 10-6"></path></svg>
+          </a>
+        </div>
+      </div>
+      <div>
+        <div class="site-footer__title">导航</div>
+        <ul class="site-footer__list">
+          <li><a href="index.html">首页</a></li>
+          <li><a href="works.html">作品列表</a></li>
+          <li><a href="about.html">关于我</a></li>
+          <li><a href="contact.html">联系方式</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="site-footer__title">联系</div>
+        <ul class="site-footer__contact">
+          <li><strong style="white-space:pre-wrap"></strong> rjx1988271</li>
+          <li><strong>邮箱</strong>
+1988271@qq.com</li>
+          <li><strong>GitHub</strong> rjxerp</li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <span>© <span data-year="">2026</span> AI先知局 · 个人作品集</span>
+      <span>模板基于 <a href="https://github.com/rammcodes/Dopefolio" target="_blank" rel="noopener noreferrer">Dopefolio</a>（GPL-3.0）改造</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/site.js" defer=""></script>
+<script src="assets/js/cloud.js" defer=""></script>
+<script src="assets/js/cloud-data.js" defer=""></script>
+<script src="assets/js/cloud-ai.js" defer=""></script>
+<script src="assets/js/cloud-cover.js" defer=""></script>
+<script defer>
+document.addEventListener("DOMContentLoaded", function () {
+  /* ==========================================================================
+     首页：精选作品云端渲染 + AI 作品摘要
+     渐进增强：云端可达时用真实云端数据渲染；不可用时保留静态内容。
+     ========================================================================== */
+  (function () {
+    "use strict";
+
+    var grid = document.getElementById("featured-grid");
+    var summaryBox = document.getElementById("ai-summary");
+    var summaryText = document.getElementById("ai-summary-text");
+
+    var ICONS = {
+      app: '<path d="M3 21V8l7-5 7 5v13"/><path d="M9 21v-6h6v6"/><path d="M7 11h2M13 11h2M7 15h2"/>',
+      ai: '<path d="M12 2.5l2.9 5.9 6.6.9-4.8 4.6 1.2 6.5L12 17.3 6.1 20.4l1.2-6.5-4.8-4.6 6.6-.9z"/>',
+      design: '<path d="M4 4h16v16H4z"/><path d="M8 9h8M8 13h8M8 17h5"/>'
+    };
+
+    function renderCard(p) {
+      var icon = ICONS[p.category] || ICONS.app;
+      var tools = (p.techStack || []).slice(0, 3)
+        .map(function (t) { return '<span class="tag">' + escapeHtml(t) + "</span>"; }).join("");
+      var more = (p.techStack || []).length > 3
+        ? '<span class="tag tag--plain">+' + (p.techStack.length - 3) + "</span>" : "";
+
+      return (
+        '<article class="work-card reveal">' +
+          '<div class="work-card__figure">' +
+            '<span class="work-card__badge">' + escapeHtml(p.badge || "作品") + "</span>" +
+            renderCover(p, "", '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' + icon + "</svg>") +
+          "</div>" +
+          '<div class="work-card__body">' +
+            '<h3 class="work-card__title">' + escapeHtml(p.title) + "</h3>" +
+            '<p class="work-card__desc">' + escapeHtml(p.summary) + "</p>" +
+            '<div class="work-card__meta">' + tools + more + "</div>" +
+            '<div class="work-card__links">' +
+              '<a class="work-card__link" href="' + escapeHtml(p.detailUrl) + '">查看详情' +
+                '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>' +
+              (p.repoUrl
+                ? '<a class="work-card__link work-card__link--muted" href="' + escapeHtml(p.repoUrl) + '" target="_blank" rel="noopener noreferrer">' +
+                  '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.37.5 0 5.87 0 12.5c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58 0-.29-.01-1.05-.02-2.06-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.33-1.76-1.33-1.76-1.09-.74.08-.73.08-.73 1.2.09 1.83 1.24 1.83 1.24 1.07 1.83 2.81 1.3 3.5 1 .11-.78.42-1.31.76-1.61-2.66-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6.01 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.62-5.49 5.92.43.37.81 1.1.81 2.22 0 1.6-.01 2.89-.01 3.28 0 .32.22.7.83.58C20.57 22.3 24 17.8 24 12.5 24 5.87 18.63.5 12 .5Z"/></svg>' +
+                  "源码</a>"
+                : "") +
+            "</div>" +
+          "</div>" +
+        "</article>"
+      );
+    }
+
+    async function init() {
+      if (!isCloudReady() || !grid) return;
+
+      try {
+        var projects = await fetchProjects();
+        if (!projects || !projects.length) return;
+
+        // 首页精选：取云端前 3 个项目
+        var featured = projects.slice(0, 3);
+        grid.innerHTML = featured.map(renderCard).join("");
+        grid.querySelectorAll(".reveal").forEach(function (el) { el.classList.add("is-in"); });
+
+        // AI 摘要（失败不阻塞主流程）
+        try {
+          var summary = await summarizePortfolio(projects);
+          if (summary && summaryText && summaryBox) {
+            summaryText.textContent = summary;
+            summaryBox.hidden = false;
+          }
+        } catch (e) {
+          // AI 摘要失败静默跳过：它是增强功能，不影响页面其余部分
+        }
+      } catch (err) {
+        // 云端不可用：保留静态精选作品内容
+      }
+    }
+
+    init();
+  })();
+});
+</script>
+</body></html>

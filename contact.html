@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>联系方式 | AI先知局 · 个人作品集</title>
+<meta name="description" content="联系 AI先知局：业务软件定制、AI 工作流搭建、文档工具合作。微信 rjx1988271，邮箱 1988271@qq.com。">
+<meta name="keywords" content="联系方式,合作,业务软件定制,AI工作流">
+<link rel="canonical" href="https://rjxerp.github.io/contact.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="联系方式 | AI先知局">
+<meta property="og:description" content="业务软件定制、AI 工作流搭建、文档工具合作 — 欢迎联系。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230062b9'/%3E%3Ctext x='16' y='22' font-family='sans-serif' font-size='16' font-weight='bold' fill='white' text-anchor='middle'%3EA%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/css/design-system.css">
+<script src="https://cdn.jsdelivr.net/npm/@tencent-ai/workbuddy-cloud-sdk@dev/lib/index.global.js" defer></script>
+<style>
+  .form-note--error { color: #c0392b; }
+  .form-note--ok { color: #1f7a3d; }
+
+  /* 站主工作台 */
+  .owner-bar[hidden] { display: none; }
+  .owner-bar {
+    display: flex;
+    align-items: center;
+    gap: var(--s2);
+    flex-wrap: wrap;
+    padding: var(--s3);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    background: var(--bg-2);
+    margin-bottom: var(--s4);
+  }
+  .owner-bar__text { font-size: 14px; color: var(--sub); flex: 1 1 200px; }
+  .owner-bar__name { font-weight: 600; color: var(--ink); }
+
+  .inbox {
+    margin-top: var(--s4);
+    border-top: 1px solid var(--line);
+    padding-top: var(--s4);
+  }
+  .inbox__list { display: flex; flex-direction: column; gap: var(--s2); }
+  .inbox-item {
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: var(--s3);
+    background: var(--bg);
+  }
+  .inbox-item__head {
+    display: flex;
+    justify-content: space-between;
+    gap: var(--s2);
+    align-items: baseline;
+    flex-wrap: wrap;
+    margin-bottom: 6px;
+  }
+  .inbox-item__name { font-weight: 600; font-size: 15px; }
+  .inbox-item__time { font-size: 12.5px; color: var(--sub); }
+  .inbox-item__contact { font-size: 13px; color: var(--primary); margin-bottom: 6px; overflow-wrap: anywhere; }
+  .inbox-item__body { font-size: 14px; color: var(--ink); white-space: pre-wrap; overflow-wrap: anywhere; }
+  .inbox-item__actions { display: flex; gap: 8px; margin-top: 10px; flex-wrap: wrap; }
+  .badge-status {
+    font-size: 11.5px;
+    padding: 2px 9px;
+    border-radius: var(--radius-pill);
+    background: var(--tint);
+    color: var(--primary-dark);
+    font-weight: 600;
+  }
+  .badge-status.is-done { background: #e6f4ea; color: #1f7a3d; }
+</style>
+</head>
+<body data-page="contact">
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="brand" href="index.html">
+      <span class="brand__mark" aria-hidden="true">A</span>
+      <span>AI先知局 <span class="brand__sub">个人作品集</span></span>
+    </a>
+    <nav class="nav" aria-label="主导航">
+      <a class="nav__link" data-nav="home" href="index.html">首页</a>
+      <a class="nav__link" data-nav="works" href="works.html">作品</a>
+      <a class="nav__link" data-nav="about" href="about.html">关于我</a>
+      <a class="nav__link" data-nav="contact" href="contact.html">联系</a>
+    </nav>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-label="展开导航菜单" aria-controls="mobile-nav">
+      <span class="nav-toggle__bars" aria-hidden="true"></span>
+    </button>
+  </div>
+  <div class="mobile-nav" id="mobile-nav">
+    <div class="container">
+      <a class="mobile-nav__link" href="index.html">首页</a>
+      <a class="mobile-nav__link" href="works.html">作品列表</a>
+      <a class="mobile-nav__link" href="about.html">关于我</a>
+      <a class="mobile-nav__link" href="contact.html">联系方式</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="section">
+    <div class="container">
+      <div class="section__head section__head--center">
+        <span class="eyebrow">联系方式</span>
+        <h1 class="section__title">说说你的需求</h1>
+        <p class="section__desc">业务软件定制、AI 工作流搭建、文档工具合作——都可以先聊。具体需求越清楚，回复越快。</p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- 联系信息 -->
+        <div>
+          <div class="stack" style="margin-bottom: var(--s3);">
+            <div class="stack__title">直接联系</div>
+            <div class="contact-item">
+              <div class="contact-item__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5Z"/></svg>
+              </div>
+              <div>
+                <div class="contact-item__label">微信</div>
+                <div class="contact-item__value">rjx1988271</div>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg>
+              </div>
+              <div>
+                <div class="contact-item__label">邮箱</div>
+                <div class="contact-item__value"><a href="mailto:1988271@qq.com">1988271@qq.com</a></div>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item__icon">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.37.5 0 5.87 0 12.5c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58 0-.29-.01-1.05-.02-2.06-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.33-1.76-1.33-1.76-1.09-.74.08-.73.08-.73 1.2.09 1.83 1.24 1.83 1.24 1.07 1.83 2.81 1.3 3.5 1 .11-.78.42-1.31.76-1.61-2.66-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6.01 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.62-5.49 5.92.43.37.81 1.1.81 2.22 0 1.6-.01 2.89-.01 3.28 0 .32.22.7.83.58C20.57 22.3 24 17.8 24 12.5 24 5.87 18.63.5 12 .5Z"/></svg>
+              </div>
+              <div>
+                <div class="contact-item__label">GitHub</div>
+                <div class="contact-item__value"><a href="https://github.com/rjxerp" target="_blank" rel="noopener noreferrer">github.com/rjxerp</a></div>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <div class="contact-item__label">所在城市</div>
+                <div class="contact-item__value">湖南 · 邵阳</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="stack">
+            <div class="stack__title">可以聊聊的合作方向</div>
+            <ul class="stack__list">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5 9-9"/></svg>
+                <span>业务软件定制开发（台账、提醒、账务类桌面或 Web 应用）</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5 9-9"/></svg>
+                <span>AI 协作流程搭建与技能包定制</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5 9-9"/></svg>
+                <span>文档处理链路优化（识别、审查、格式转换、归档）</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5 9-9"/></svg>
+                <span>现有开源项目的二次开发与维护</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 表单 -->
+        <div class="stack">
+          <div class="stack__title">留言</div>
+
+          <div class="owner-bar" id="owner-bar" hidden>
+            <span class="owner-bar__text" id="owner-text">站主工作台</span>
+            <button class="btn btn--ghost btn--sm" id="owner-login" type="button">站主登录</button>
+            <button class="btn btn--ghost btn--sm" id="owner-logout" type="button" hidden>退出登录</button>
+          </div>
+
+          <form id="contact-form" novalidate>
+            <div class="form-row">
+              <label class="form-label" for="cf-name">你的称呼</label>
+              <input class="form-input" type="text" id="cf-name" name="name" placeholder="例如：张先生" autocomplete="name">
+            </div>
+            <div class="form-row">
+              <label class="form-label" for="cf-contact">联系方式</label>
+              <input class="form-input" type="text" id="cf-contact" name="contact" placeholder="微信 / 手机 / 邮箱" autocomplete="email">
+            </div>
+            <div class="form-row">
+              <label class="form-label" for="cf-message">需求描述</label>
+              <textarea class="form-textarea" id="cf-message" name="message" placeholder="简单说说需要解决什么问题、期望怎么用"></textarea>
+            </div>
+            <button class="btn btn--primary" type="submit" style="width:100%;" id="cf-submit">
+              发送留言
+              <svg class="btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>
+            </button>
+            <p class="form-note" id="form-status">留言将保存到云端，可随时联系。</p>
+          </form>
+
+          <div class="inbox" id="inbox" hidden>
+            <div class="stack__title" style="margin-bottom: var(--s2);">留言收件箱</div>
+            <div class="inbox__list" id="inbox-list"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__grid">
+      <div>
+        <div class="brand" style="color:#fff; margin-bottom: var(--s2);">
+          <span class="brand__mark" aria-hidden="true">A</span>
+          <span>AI先知局</span>
+        </div>
+        <p class="site-footer__text">独立开发者，专注业务软件、AI 工作流与内容工具。用代码解决真实场景里的具体问题。</p>
+        <div class="site-social">
+          <a href="https://github.com/rjxerp" target="_blank" rel="noopener noreferrer" aria-label="GitHub 主页">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.37.5 0 5.87 0 12.5c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58 0-.29-.01-1.05-.02-2.06-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.33-1.76-1.33-1.76-1.09-.74.08-.73.08-.73 1.2.09 1.83 1.24 1.83 1.24 1.07 1.83 2.81 1.3 3.5 1 .11-.78.42-1.31.76-1.61-2.66-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6.01 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.62-5.49 5.92.43.37.81 1.1.81 2.22 0 1.6-.01 2.89-.01 3.28 0 .32.22.7.83.58C20.57 22.3 24 17.8 24 12.5 24 5.87 18.63.5 12 .5Z"/></svg>
+          </a>
+          <a href="mailto:1988271@qq.com" aria-label="发送邮件">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg>
+          </a>
+        </div>
+      </div>
+      <div>
+        <div class="site-footer__title">导航</div>
+        <ul class="site-footer__list">
+          <li><a href="index.html">首页</a></li>
+          <li><a href="works.html">作品列表</a></li>
+          <li><a href="about.html">关于我</a></li>
+          <li><a href="contact.html">联系方式</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="site-footer__title">联系</div>
+        <ul class="site-footer__contact">
+          <li><strong>微信</strong> rjx1988271</li>
+          <li><strong>邮箱</strong> 1988271@qq.com</li>
+          <li><strong>GitHub</strong> rjxerp</li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <span>© <span data-year>2026</span> AI先知局 · 个人作品集</span>
+      <span>模板基于 <a href="https://github.com/rammcodes/Dopefolio" target="_blank" rel="noopener noreferrer">Dopefolio</a>（GPL-3.0）改造</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/site.js" defer></script>
+<script src="assets/js/cloud.js" defer></script>
+<script src="assets/js/cloud-data.js" defer></script>
+<script src="assets/js/cloud-auth.js" defer></script>
+<script defer>
+document.addEventListener("DOMContentLoaded", function () {
+  /* ==========================================================================
+     联系方式页：云端留言 + 站主工作台
+     · 访客提交 → 写入云端 messages 表
+     · 站主登录 → 可读取收件箱、标记已读、删除留言
+     · 失败路径全部有明确中文提示，不静默失败
+     ========================================================================== */
+  (function () {
+    "use strict";
+
+    var form = document.getElementById("contact-form");
+    var statusEl = document.getElementById("form-status");
+    var submitBtn = document.getElementById("cf-submit");
+    var ownerBar = document.getElementById("owner-bar");
+    var ownerText = document.getElementById("owner-text");
+    var ownerLogin = document.getElementById("owner-login");
+    var ownerLogout = document.getElementById("owner-logout");
+    var inbox = document.getElementById("inbox");
+    var inboxList = document.getElementById("inbox-list");
+
+    /* ---------- 表单提交 ---------- */
+    if (form) {
+      form.addEventListener("submit", async function (event) {
+        event.preventDefault();
+
+        var name = (document.getElementById("cf-name").value || "").trim();
+        var contact = (document.getElementById("cf-contact").value || "").trim();
+        var body = (document.getElementById("cf-message").value || "").trim();
+
+        if (!name || !contact || !body) {
+          statusEl.textContent = "请填写完整姓名、联系方式与留言内容。";
+          statusEl.className = "form-note form-note--error";
+          return;
+        }
+
+        if (!isCloudReady()) {
+          statusEl.textContent =
+            "云服务未连接，留言暂无法保存。请直接发送邮件至 1988271@qq.com。";
+          statusEl.className = "form-note form-note--error";
+          return;
+        }
+
+        submitBtn.disabled = true;
+        statusEl.textContent = "正在提交…";
+        statusEl.className = "form-note";
+
+        try {
+          await submitMessage({ name: name, contact: contact, body: body });
+          statusEl.textContent = "留言已成功提交，我会尽快回复你。";
+          statusEl.className = "form-note form-note--ok";
+          document.getElementById("cf-message").value = "";
+        } catch (err) {
+          statusEl.textContent =
+            "提交失败：" + cloudErrorMessage(err, "请稍后重试") +
+            "。也可直接发送邮件至 1988271@qq.com。";
+          statusEl.className = "form-note form-note--error";
+        } finally {
+          submitBtn.disabled = false;
+        }
+      });
+    }
+
+    /* ---------- 收件箱渲染 ---------- */
+    function renderInbox(items) {
+      if (!inboxList) return;
+      if (!items.length) {
+        inboxList.innerHTML = '<p class="form-note">暂无留言。</p>';
+        return;
+      }
+
+      inboxList.innerHTML = items
+        .map(function (m) {
+          var isDone = m.status === "done";
+          return (
+            '<div class="inbox-item">' +
+              '<div class="inbox-item__head">' +
+                '<span class="inbox-item__name">' + escapeHtml(m.name) + "</span>" +
+                '<span class="inbox-item__time">' + escapeHtml(formatDateTime(m.createdAt)) +
+                  ' <span class="badge-status' + (isDone ? " is-done" : "") + '">' +
+                  (isDone ? "已处理" : "待处理") + "</span></span>" +
+              "</div>" +
+              (m.contact ? '<div class="inbox-item__contact">' + escapeHtml(m.contact) + "</div>" : "") +
+              '<div class="inbox-item__body">' + escapeHtml(m.body) + "</div>" +
+              '<div class="inbox-item__actions">' +
+                '<button class="btn btn--ghost btn--sm" type="button" data-act="toggle" data-id="' + m.id + '">' +
+                  (isDone ? "标记待处理" : "标记已处理") + "</button>" +
+                '<button class="btn btn--ghost btn--sm" type="button" data-act="del" data-id="' + m.id + '">删除</button>' +
+              "</div>" +
+            "</div>"
+          );
+        })
+        .join("");
+    }
+
+    /* ---------- 收件箱操作 ---------- */
+    if (inboxList) {
+      inboxList.addEventListener("click", async function (event) {
+        var btn = event.target.closest("button[data-act]");
+        if (!btn) return;
+        var id = Number(btn.getAttribute("data-id"));
+        var act = btn.getAttribute("data-act");
+
+        btn.disabled = true;
+        try {
+          if (act === "toggle") {
+            await updateMessageStatus(id, "done");
+          } else if (act === "del") {
+            if (!window.confirm("确定删除这条留言？删除后无法恢复。")) {
+              btn.disabled = false;
+              return;
+            }
+            await deleteMessage(id);
+          }
+          await loadInbox();
+        } catch (err) {
+          window.alert(cloudErrorMessage(err, "操作失败，请重试。"));
+          btn.disabled = false;
+        }
+      });
+    }
+
+    async function loadInbox() {
+      if (!inbox) return;
+      try {
+        var items = await fetchMessages();
+        inbox.hidden = false;
+        renderInbox(items);
+      } catch (err) {
+        // 无权限读取说明当前身份不是站主
+        inbox.hidden = true;
+      }
+    }
+
+    /* ---------- 站主身份 ---------- */
+    async function refreshOwnerUI() {
+      if (!ownerBar) return;
+      ownerBar.hidden = false;
+
+      if (!isCloudReady()) {
+        ownerText.textContent = "云服务未连接，站主工作台不可用";
+        ownerLogin.hidden = true;
+        ownerLogout.hidden = true;
+        return;
+      }
+
+      try {
+        var session = await getCurrentSession();
+        if (!session) {
+          ownerText.textContent = "站主登录后可查看留言收件箱";
+          ownerLogin.hidden = false;
+          ownerLogout.hidden = true;
+          inbox.hidden = true;
+          return;
+        }
+
+        ownerText.innerHTML = "已登录：<span class=\"owner-bar__name\">" +
+          escapeHtml(displayNameOf(session)) + "</span>";
+        ownerLogin.hidden = true;
+        ownerLogout.hidden = false;
+
+        var isOwner = await checkOwnerStatus();
+        if (isOwner) {
+          await loadInbox();
+        } else {
+          inbox.hidden = true;
+          ownerText.textContent += " · 当前账号不是站主，暂无法查看收件箱";
+        }
+      } catch (err) {
+        ownerText.textContent = "身份校验失败：" + cloudErrorMessage(err, "请刷新重试");
+      }
+    }
+
+    if (ownerLogin) {
+      ownerLogin.addEventListener("click", async function () {
+        try {
+          await signInWithWorkBuddy();
+        } catch (err) {
+          window.alert(cloudErrorMessage(err, "登录失败，请重试。"));
+        }
+      });
+    }
+
+    if (ownerLogout) {
+      ownerLogout.addEventListener("click", async function () {
+        try {
+          await signOut();
+          await refreshOwnerUI();
+        } catch (err) {
+          window.alert(cloudErrorMessage(err, "退出失败，请重试。"));
+        }
+      });
+    }
+
+    /* ---------- 启动：先处理 OAuth 回调，再刷新站主 UI ---------- */
+    (async function init() {
+      try {
+        await restoreAuth();
+      } catch (e) {
+        // 回调处理失败不阻断页面其余功能
+      }
+      await refreshOwnerUI();
+    })();
+  })();
+});
+</script>
+</body>
+</html>
